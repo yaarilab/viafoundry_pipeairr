@@ -24,6 +24,7 @@ book:
     - frequency_question.qmd
     - Run_pipeline_nf.qmd
     - script_for_params.qmd
+    - tweak_param.qmd
     - documentation.qmd
     - zenodo.qmd
 

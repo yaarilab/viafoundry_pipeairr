@@ -1,0 +1,33 @@
+---
+title: 'How to tweaked parameters for an existing pipeline?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+There are two option to tweaked parameters for an existing pipeline.
+
+
+
+**1. To change the param of an existing pipeline in viafoundry:**
+
+ - Go to the “Advanced” tab of the pipeline.
+
+  - Find and change the desired parameter in the “Pipeline Header Script”.
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/a56aba35-3596-4b49-8a18-4bf59cf004e3/user_cropped_screenshot.jpeg?tl_px=22,0&br_px=1398,344&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=306,41)
+
+  - Save the change.
+
+
+
+**2. To change the param of an existing nextflow pipeline:**
+
+ - Go to the nextflow.config file.
+
+ - Find and change the desired parameter in the file.
+
+ - Save the change.
+

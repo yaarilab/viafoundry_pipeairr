@@ -23,15 +23,5 @@ format: html
 
 [How to set up pipeline default parameters???????????](https://viascientific.github.io/vfdocs/ViaFoundry/pipeline_guide/#adding-pipeline-inputs-by-pipeline-header-script)
 
-
 [How to set up pipeline default run environment???????????](https://viascientific.github.io/vfdocs/ViaFoundry/pipeline_guide/#autofill-feature-for-pipeline-properties)
 
-     - part: "Tweaking existing pipeline parameters"
-      chapters:
-        - tweak_and_run.qmd
-        - hardcode_tweak_param.qmd
-        
-        - export_a_pipeline.qmd
-    - part: "Setting default pipeline parameters and run environment"
-      chapters: 
-        - default_param.qmd

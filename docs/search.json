@@ -39,7 +39,7 @@
     "href": "frequency_question.html",
     "title": "1  Frequency question",
     "section": "",
-    "text": "How to run a pipeline in viafoundry?\nHow to build a process in viafoundry?\nHow to build a module in viafoundry?\nHow to build a pipeline in viafoundry?\nWhat is the meaning of “Pipeline Header Script?\nIs it possible to run a pipeline with two different containers?\nHow to set up pipeline default parameters???????????\nHow to set up pipeline default run environment???????????\n - part: \"Tweaking existing pipeline parameters\"\n  chapters:\n    - tweak_and_run.qmd\n    - hardcode_tweak_param.qmd\n    \n    - export_a_pipeline.qmd\n- part: \"Setting default pipeline parameters and run environment\"\n  chapters: \n    - default_param.qmd"
+    "text": "How to run a pipeline in viafoundry?\nHow to build a process in viafoundry?\nHow to build a module in viafoundry?\nHow to build a pipeline in viafoundry?\nWhat is the meaning of “Pipeline Header Script?\nIs it possible to run a pipeline with two different containers?\nHow to set up pipeline default parameters???????????\nHow to set up pipeline default run environment???????????"
   },
   {
     "objectID": "Run_pipeline_nf.html",
@@ -58,14 +58,14 @@
   {
     "objectID": "documentation.html",
     "href": "documentation.html",
-    "title": "4  Recommended documentation format",
+    "title": "5  Recommended documentation format",
     "section": "",
     "text": "Follow these recommends format for documenting pipelines with clarity and efficiency.\nA pipeline for {short summary} that was produced in the same fashion as those in {paper}.\n\n**Library preparation and sequencing method:**\n\n  {explanation about the sequence}\n\n\n**Input files:**\n\n1. {file 1}\n2. {file 2}\n\n   .\n  \n   .\n  \n   .\n\n**To test the pipeline:**\n\n{optional test mathod}\n\n\n**Output files:**\n\n1. {file 1}\n2. {file 2}\n\n   .\n  \n   .\n  \n   .\n\n**Pipeline container:**\n\n* Docker: {docker image}\n\n\n**Sequence processing steps:**\n\n1. {step 1}\n2. {step 2}\n   .\n  \n   .\n  \n   .\n\n**File used:**\n\n* {file 1}\n* {file 2}\n  .\n  \n  .\n  \n  ."
   },
   {
     "objectID": "zenodo.html",
     "href": "zenodo.html",
-    "title": "5  Archive GitHub Repository in Zenodo",
+    "title": "6  Archive GitHub Repository in Zenodo",
     "section": "",
     "text": "Follow these steps to archive your GitHub repository in Zenodo:\n1. Create a Release in GitHub:\n\nGo to your GitHub repository.\nClick on the “Releases” tab.\nDraft a new release, providing necessary information.\nPublish the release.\n\n2. Create a Zenodo Account:\n\nIf not already done, create an account on Zenodo.\n\n3. Connect GitHub and Zenodo:\n\nIn Zenodo, navigate to the “GitHub Sync” tab.\nAuthorize Zenodo to access your GitHub repositories.\n\n4. Deposit from GitHub:\n\nIn Zenodo, go to the “Upload” page.\nSelect “GitHub” as the upload method.\nChoose the repository and release.\nFill in metadata details.\nStart the upload.\n\n5. Check the Archival Process:\n\nAfter completion, Zenodo will provide a DOI for your repository.\nFind the archived repository on your Zenodo profile.\n\n6. Citation:\n\nUse the DOI to cite your GitHub repository in publications.\n\nNow your GitHub repository is archived in Zenodo and can be referenced with a DOI."
   },
@@ -138,5 +138,26 @@
     "title": "16  Is it possible to run a pipeline with two different containers?",
     "section": "",
     "text": "TLDR; yes you can! Just follow the steps below to configure the containers.\nIf you searched this question, it means you encountered the same problem we did, where we have modules or processes that require the use of different containers to perform the task. Nextflow allows you to configure a container for each process with a simple code for more info see. The steps below detail the process of configuring the containers and the processes. They are intended for the nextflow.config file as you can configure in DolphinNext.\nExample for this issue\nThis process needs to run on a “milaboratory/mixcr:latest” docker image\n\nThis process needs to run on a “ssnnm/mhecd4tcr:0.1.0” docker image\n\nClick the on “Advanced” tab\n\nHow to define the containers\nThe docker images need to be defined on the the nextflow.config file as a new process that contains “container=” and the main docker image. For each process that needs to run with a different docker, write “WithName:”, the process name, and in {} “container=” the image docker for this process."
+  },
+  {
+    "objectID": "tweak_param.html",
+    "href": "tweak_param.html",
+    "title": "4  How to tweaked parameters for an existing pipeline?",
+    "section": "",
+    "text": "There is two option to tweaked parameters for an existing pipeline.\n1. To change the param of an existing pipeline in viafoundry:\n\nGo to the “Advanced” tab of the pipeline.\nFind and change the desired parameter in the “Pipeline Header Script”.\n\n\n\nSave the change.\n\n2. To change the param of an existing nextflow pipeline:\n\nGo to the nextflow.config file.\nFind and change the desired parameter in the file.\nSave the change."
+  },
+  {
+    "objectID": "tweak_param.html#if-you-edit-run-the-pipeline-in-viafoundry",
+    "href": "tweak_param.html#if-you-edit-run-the-pipeline-in-viafoundry",
+    "title": "4  How to tweaked parameters for an existing pipeline?",
+    "section": "4.1 If you edit/ run the pipeline in viafoundry:",
+    "text": "4.1 If you edit/ run the pipeline in viafoundry:\n** 1. To change the param of an existing pipeline in viafoundry you need to:**\n\nGo to the “Advanced” tab of the pipeline\nFind and change the desired parameter in the “Pipeline Header Script”\n\n\n\nSave the change"
+  },
+  {
+    "objectID": "tweak_param.html#if-you-run-the-pipeline-from-nextflow-command",
+    "href": "tweak_param.html#if-you-run-the-pipeline-from-nextflow-command",
+    "title": "4  How to tweaked parameters for an existing pipeline?",
+    "section": "4.2 If you run the pipeline from nextflow command:",
+    "text": "4.2 If you run the pipeline from nextflow command:\nTo change the param of an existing nextflow pipeline:\n1.Go to the nextflow.config\n2.Find and change the desired parameter in the file\n3.Save the change"
   }
 ]

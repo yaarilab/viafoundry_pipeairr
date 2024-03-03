@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/index.html</loc>
-    <lastmod>2024-03-03T07:05:40.440Z</lastmod>
+    <lastmod>2024-03-03T09:13:00.855Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/frequency_question.html</loc>
-    <lastmod>2024-03-03T07:43:48.516Z</lastmod>
+    <lastmod>2024-03-03T09:42:53.629Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/Run_pipeline_nf.html</loc>
-    <lastmod>2024-03-02T19:34:00.110Z</lastmod>
+    <lastmod>2024-03-03T09:43:10.868Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/script_for_params.html</loc>
-    <lastmod>2024-03-03T07:44:44.193Z</lastmod>
+    <lastmod>2024-03-03T09:43:24.670Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/documentation.html</loc>
-    <lastmod>2024-03-02T19:34:00.146Z</lastmod>
+    <lastmod>2024-03-03T09:44:17.595Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/zenodo.html</loc>
-    <lastmod>2024-03-03T07:44:10.644Z</lastmod>
+    <lastmod>2024-03-03T09:44:33.721Z</lastmod>
   </url>
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/import_pipeline.html</loc>
@@ -63,5 +63,9 @@
   <url>
     <loc>https://PipeAIRR.github.io/pipeAIRR/two_dockers.html</loc>
     <lastmod>2024-03-02T19:34:00.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://PipeAIRR.github.io/pipeAIRR/tweak_param.html</loc>
+    <lastmod>2024-03-03T09:43:47.864Z</lastmod>
   </url>
 </urlset>
