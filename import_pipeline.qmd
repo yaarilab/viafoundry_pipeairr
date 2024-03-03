@@ -1,0 +1,51 @@
+---
+title: 'How to import a pipeline to dolphinNext?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+**1. Launch your DolphinNext docker**
+
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2. Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
+
+**3. Click on the “Pipelines” tab**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/8db0d4bc-3321-4a9e-8d72-8094eeabce78/screenshot.png?tl_px=0,0&br_px=774,433&force_format=png&width=560.0)
+
+**4. Click on the "new pipeline" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/f552424a-f85e-421f-ae13-7e7be3813492/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1075,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=2,100)
+
+**5. Click on "Input Pipeline"**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/a6e9c010-66ab-4f7e-ad18-d0f1f9d32464/ascreenshot.jpeg?tl_px=242,0&br_px=1317,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,69)
+
+**6. Click on the "Select File" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/f03b97db-cc16-4a5d-a23c-0f1a3bdefdd8/ascreenshot.jpeg?tl_px=452,0&br_px=1527,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,117)
+
+**7. Choose the "main.dn" file**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/0e702a55-c382-491b-9c79-842f9521e3a7/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1297,475&force_format=png&width=560.0)
+
+**8. Click on the "Next" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/4421311a-b980-403d-be32-c7e20acd4542/user_cropped_screenshot.jpeg?tl_px=844,177&br_px=1920,778&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=296,138)
+
+**9. Click on the "Import" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/aeaec77d-7cf6-4310-aacb-dd3e37ccd6e8/ascreenshot.jpeg?tl_px=844,301&br_px=1920,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=285,257)
+
+**10. Click on the "Complete" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/5524e8d7-c24a-4721-84bc-507ab9637c20/ascreenshot.jpeg?tl_px=844,301&br_px=1920,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=279,253)

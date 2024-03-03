@@ -1,0 +1,46 @@
+---
+title: "Archive GitHub Repository in Zenodo"
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+
+Follow these steps to archive your GitHub repository in Zenodo:
+
+**1. Create a Release in GitHub:**
+
+   - Go to your GitHub repository.
+   - Click on the "Releases" tab.
+   - Draft a new release, providing necessary information.
+   - Publish the release.
+
+**2. Create a Zenodo Account:**
+
+   - If not already done, create an account on [Zenodo](https://zenodo.org/).
+
+**3. Connect GitHub and Zenodo:**
+
+   - In Zenodo, navigate to the "GitHub Sync" tab.
+   - Authorize Zenodo to access your GitHub repositories.
+
+**4. Deposit from GitHub:**
+
+   - In Zenodo, go to the "Upload" page.
+   - Select "GitHub" as the upload method.
+   - Choose the repository and release.
+   - Fill in metadata details.
+   - Start the upload.
+
+**5. Check the Archival Process:**
+
+   - After completion, Zenodo will provide a DOI for your repository.
+   - Find the archived repository on your Zenodo profile.
+
+**6. Citation:**
+
+   - Use the DOI to cite your GitHub repository in publications.
+
+Now your GitHub repository is archived in Zenodo and can be referenced with a DOI.

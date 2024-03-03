@@ -1,0 +1,60 @@
+---
+title: 'How to create a run with tweaked parametrs in DolphinNext?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+**1. Launch your DolphinNext docker**
+
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2. Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
+
+**3. Choose your pipeline**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/62337b6c-91d5-45f4-8e26-44bf6da43584/user_cropped_screenshot.jpeg?tl_px=0,58&br_px=982,607&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=40,138)
+
+**4. Click on the "run" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/08e0f90f-e55a-49e4-97c6-593ce3029ea8/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=498,69)
+
+**5. Choose "Create New Run"**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/a2c3bd1c-4205-4d72-9f93-cddc0771df2b/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=466,90)
+
+**6. Select a project or create a new one**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-10/0b72d925-8358-4db3-bad3-614245c20854/user_cropped_screenshot.jpeg?tl_px=200,0&br_px=1920,902&force_format=png&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=738,348)
+
+
+**7. Enter run name and click on the "Save run" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/1ae345f2-397c-482e-96c0-cbcc32f1dac9/screenshot.png?tl_px=130,0&br_px=989,353&force_format=png&width=560.0)
+
+**8. Find the module of the parameter you want to change**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/013ac254-1b8b-4760-8f34-68d66fae1900/ascreenshot.jpeg?tl_px=325,6&br_px=1400,607&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**9. Change the "no" to "yes" and click on the settings button **
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/f0a6d747-0c88-49f8-91e4-b119ddd08dc1/ascreenshot.jpeg?tl_px=402,0&br_px=1477,601&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**10. Enter the new parametrs for this module. The parametrs that appear are the default in the module (not in the pipeline)**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/7ab3b8df-d3df-4a37-8f1a-7cbf76937a12/ascreenshot.jpeg?tl_px=0,0&br_px=1075,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=37,66)
+
+**11. Click on the "Ok" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/40e52095-6aaf-470c-9be0-5bacab630eb2/ascreenshot.jpeg?tl_px=844,301&br_px=1920,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=461,242)
+
+**12. Run the pipeline with the tweaked parameters**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/7ce33257-5232-42ad-a8ac-5db0085387e0/screenshot.png?tl_px=108,59&br_px=968,540&force_format=png&width=560.0)

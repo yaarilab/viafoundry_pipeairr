@@ -1,0 +1,71 @@
+---
+title: 'How to run a pipeline in DolphinNext?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+**1. Launch your DolphinNext docker**
+
+```bash
+OUTDIR=${replace_with_your_directory}
+docker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+# inside the docker
+startup
+```
+
+**2. Navigate to [http://localhost:8080/dolphinnext/](http://localhost:8080/dolphinnext/)**
+
+**3. Choose your pipeline**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/f516d58e-48ba-4fb9-a27d-f0ed0011cca0/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1075,532&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=29,134)
+
+**4. Click on the "Run" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/1f77a406-0d31-4d3c-ad57-0e6aed555a95/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=491,67)
+
+**5. Click on the"Create New Run" option**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/8b412f39-47a3-4595-b75b-86ad62be2ebf/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=444,87)
+
+**6. Choose the Project or create a new one**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/c4fe9a21-36f9-4c0c-84ac-2a25e50670da/user_cropped_screenshot.jpeg?tl_px=100,0&br_px=1820,902&force_format=png&width=560.0)
+
+**7. Click on the "Select Project" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/320c2c1a-879f-4729-a600-116f423e3931/ascreenshot.jpeg?tl_px=844,301&br_px=1920,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=276,161)
+
+**8. Enter run name and click on "Save run"**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/5d00fffd-63d0-482a-8ca4-634868c3e110/user_cropped_screenshot.jpeg?tl_px=692,0&br_px=1767,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,111)
+
+**9. Choose run enviroment**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/c66fdace-d335-43f1-81b3-1a1d92764cc0/ascreenshot.jpeg?tl_px=154,276&br_px=1229,877&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**10. Enter work directory**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/2c9085db-0f52-4f5b-89a7-88a96847f72c/ascreenshot.jpeg?tl_px=163,301&br_px=1238,902&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,165)
+
+**11. Enter the files and values the pipeline needs**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3d4eb93c-4ff2-4d2d-b9f6-438a973209d6/ascreenshot.jpeg?tl_px=287,240&br_px=1362,841&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**12. Click on the "Run" button**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/88edbfb1-c5f8-42cd-b510-461771ebc9a5/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=459,66)
+
+**13. Choose the "Start" option**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3f1fc929-63d8-4335-91ad-eda36250b115/ascreenshot.jpeg?tl_px=844,0&br_px=1920,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=409,92)
+
+**14. For more information on how to run the pipeline go to**
+
+[https://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html](https://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html)
+
+**15. For information about the run page go to**
+
+[https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html](https://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html)

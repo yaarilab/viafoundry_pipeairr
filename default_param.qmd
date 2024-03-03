@@ -1,0 +1,42 @@
+---
+title: 'How to set up pipeline default parameters and run environment?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+**1. Choose your pipeline**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/9bdfd2d7-7273-44b7-af12-945a14a7ab9c/screenshot.png?tl_px=0,0&br_px=859,481&force_format=png&width=560.0)
+
+**2. Click on the "Advanced" tab**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/4d81701c-c3b3-48ae-967a-25cee26b04ff/user_cropped_screenshot.jpeg?tl_px=82,0&br_px=1157,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,121)
+
+**3. Go to the "Pipeline Header Script" section**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/3c5db261-4a39-4483-af28-aacd554dcea1/screenshot.png?tl_px=0,0&br_px=1120,626&force_format=png&width=560.0)
+
+**4. First add for each process an option to change the parameters.
+To do that, the first step must be access the params variable, then the module name, and finally the process name.**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/95fc0d9f-812b-4b4e-a063-663dd96738fc/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=823,103&force_format=png&width=560.0)
+
+**5. Setting the default parameters**
+
+To set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/11c7db77-fca3-4a11-a719-d7bbd1c44583/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=953,281&force_format=png&width=560.0)
+
+**6. Setting the run environment**
+
+Different run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-10/17a0f813-2b2e-49ba-a431-ccf731c4dfa0/screenshot.jpeg?tl_px=0,0&br_px=561,224&force_format=png&width=560.0)
+
+**7. Save the changes**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-15/ac4704a2-ebfd-4514-bda2-bf7105552afd/user_cropped_screenshot.jpeg?tl_px=17,0&br_px=1092,600&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,71)
+
+

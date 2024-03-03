@@ -1,0 +1,38 @@
+---
+title: 'An easy way to set pipeline default parameters'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+Follow these steps to set default parameters for the pipeline:
+
+**1. Download the "params_dolphinnext.R" script from GitHub**
+
+```bash
+https://github.com/PipeAIRR/params_dolphinnext
+```
+
+**2. Create a csv file of pipeline parameters**
+
+Create a csv file that contain a table that each row is a parameter you want to defined.
+
+The table columns:
+- `module` - the module name
+- `process` - the process name
+- `parameter` - the parameter name
+- `value` - the parameter value
+
+**3. Run the script from the command line**
+
+```bash
+Rscript params_dolphinnext.R csv_file.csv
+```
+
+**4. Copy output ** 
+
+Copy the text from the file.txt that created to the "Pipeline Header Script" in the "Advanced" tab of the pipeline.
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/c68a55fc-ce0c-4db4-b367-8e4fe751b859/screenshot.png?tl_px=130,72&br_px=989,553&force_format=png&width=560.0)

@@ -1,0 +1,58 @@
+---
+title: "Running Nextflow Pipelines from GitHub Repositories"
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+
+Follow these steps to run [Nextflow](https://www.nextflow.io/) pipelines hosted on GitHub:
+
+Prerequisites
+
+- **Nextflow**: Ensure Nextflow is installed on your system. Follow the [official installation guide](https://www.nextflow.io/docs/latest/getstarted.html#installation).
+- **Docker**: Many Nextflow pipelines require Docker. Install Docker by following the [official guide](https://docs.docker.com/get-docker/).
+
+**1. Prepare Your Environment**
+
+Ensure your Nextflow and Docker installations are up to date and correctly configured.
+
+**2. Define the Pipeline Repository**
+
+Define the GitHub repository and its version containing the Nextflow pipeline you wish to run:
+
+```bash
+nextflowScript = <Repository_URL>
+nextflowScriptVersion = <Repository_Version>'
+# Replace <Repository_URL> and <Repository_Version> with the appropriate values for the pipeline you're using.
+```
+
+**3. Configure Pipeline Parameters**
+
+Identify the input parameters required by the pipeline. These may include paths to input files, output directories, and other configuration options. Set these parameters using variables:
+
+```bash
+input="path/to/input"
+outputPath="path/to/output"
+# Add more variables as needed
+```
+
+**4. Run the Pipeline**
+
+Construct and execute the Nextflow command with your parameters:
+
+```bash
+nextflow run  ${nextflowScript} -r ${nextflowScriptVersion} -with-docker --input '${input}' --output '${outputPath}' # Add other parameters as needed
+#Replace --input and --output with the appropriate parameter names for your pipeline.
+```
+
+
+**5. Monitor Execution and Check Outputs**
+
+Nextflow will print progress logs to the console. Monitor these logs to ensure the pipeline is executing as expected. Outputs will be saved to the specified output directory.
+
+
+By following these steps, you can run any Nextflow pipeline hosted on GitHub. Customize the input parameters and execution options based on the specific requirements of the pipeline you're using.
+

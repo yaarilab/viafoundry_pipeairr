@@ -1,0 +1,40 @@
+---
+title: 'How to set up a local dolphinnext instance?'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: 
+  html:
+    css: styles.css
+---
+
+
+**Pull the docker image **
+
+
+```bash
+docker pull ummsbiocore/dolphinnext-studio
+```
+
+**Launch the container **
+
+
+1. To ensure that changes made to the DolphinNext database persist each time the container is launched, we’ll move the database outside of the container. Please select a directory on your local machine for this purpose. For example, in this guide, we’ll use the directory ~/export. To create this directory, use the following command;
+```bash
+mkdir ~/export
+```
+2. Running the container;
+```bash
+docker run --privileged -m 10G -p 8080:80 -v ~/export:/export -ti ummsbiocore/dolphinnext-studio /bin/bash
+```
+3. After successfully launching the container, you'll need to start the MySQL and Apache servers inside the container using the following command;
+```bash
+startup
+```
+4. Now, you can  access DolphinNext through your web browser using the following URL;
+[http://localhost:8080/dolphinnext](http://localhost:8080/dolphinnext)
+
+**For more information go to **
+
+[https://github.com/dolphinnext/dolphinnext-tutorial](https://github.com/dolphinnext/dolphinnext-tutorial)

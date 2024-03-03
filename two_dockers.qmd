@@ -1,0 +1,35 @@
+---
+title: 'Is it possible to run a pipeline with two different containers?'
+suptitle: 'Example for how to run a pipeline with 2 docker'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+TLDR; yes you can! Just follow the steps below to configure the containers.
+
+If you searched this question, it means you encountered the same problem we did, where we have modules or processes that require the use of different containers to perform the task. Nextflow allows you to configure a container for each process with a simple code [for more info see](https://www.nextflow.io/docs/latest/docker.html). The steps below detail the process of configuring the containers and the processes. They are intended for the nextflow.config file as you can configure in DolphinNext.
+
+
+***Example for this issue***
+
+**This process needs to run on a "milaboratory/mixcr:latest" docker image**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/aead2379-4df6-4a33-ab24-611f3429bd9f/ascreenshot.jpeg?tl_px=161,249&br_px=934,682&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**This process needs to run on a "ssnnm/mhecd4tcr:0.1.0" docker image**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/09e017b7-a50f-4666-8a6d-414dcf9e77a1/ascreenshot.jpeg?tl_px=209,421&br_px=982,854&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,138)
+
+**Click the on "Advanced" tab**
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-08-13/0159dc70-5601-4189-96e4-f4cd75eaed5f/ascreenshot.jpeg?tl_px=73,0&br_px=846,432&force_format=png&width=560.0&wat_scale=50&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=262,127)
+
+**How to define the containers**
+
+The docker images need to be defined on the the nextflow.config file as a new process that contains “container=” and the main docker image. For each process that needs to run with a different docker, write “WithName:”, the process name, and in {} “container=” the image docker for this process.
+
+![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-09-11/f84bef3a-d84b-4fc5-9631-9830b202567b/user_cropped_screenshot.jpeg?tl_px=0,0&br_px=1200,776&force_format=png&width=774)
+

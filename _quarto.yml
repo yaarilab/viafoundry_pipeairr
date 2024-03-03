@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: "docs"
+  preview:
+    port: 4200
+    browser: true
+
+book:
+  title: "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines"
+  #contact: "gur.yaari@biu.ac.il"
+  sidebar:
+    style: docked
+    background: none
+    collapse-level: 1
+  search: true
+  site-url: https://PipeAIRR.github.io/pipeAIRR/
+  repo-url: https://github.com/PipeAIRR/pipeAIRR/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  page-navigation: true
+  page-footer: Content on this site is licensed under [CC BY-NC-ND, 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+  chapters:
+    - index.qmd
+    - frequency_question.qmd
+    - Run_pipeline_nf.qmd
+    - script_for_params.qmd
+    - documentation.qmd
+    - zenodo.qmd
+
+    
+comments:
+  giscus:
+        repo:  PipeAIRR/pipeAIRR
+  
+format:
+  html:
+    theme: [Journal]
+    css: [style.css, index.css]
+    validate-yaml: false
+
+
+

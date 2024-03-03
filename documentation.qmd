@@ -1,0 +1,73 @@
+---
+title: 'Recommended documentation format'
+execute:
+  echo: false
+  warning: false
+  message: false
+format: html
+---
+
+
+Follow these recommends format for documenting pipelines with clarity and efficiency.
+
+```bash
+A pipeline for {short summary} that was produced in the same fashion as those in {paper}.
+
+**Library preparation and sequencing method:**
+
+  {explanation about the sequence}
+
+
+**Input files:**
+
+1. {file 1}
+2. {file 2}
+
+   .
+  
+   .
+  
+   .
+
+**To test the pipeline:**
+
+{optional test mathod}
+
+
+**Output files:**
+
+1. {file 1}
+2. {file 2}
+
+   .
+  
+   .
+  
+   .
+
+**Pipeline container:**
+
+* Docker: {docker image}
+
+
+**Sequence processing steps:**
+
+1. {step 1}
+2. {step 2}
+   .
+  
+   .
+  
+   .
+
+**File used:**
+
+* {file 1}
+* {file 2}
+  .
+  
+  .
+  
+  .
+```
+
