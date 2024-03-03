@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines",
+    "section": "",
+    "text": "Welcome\npipeAIRR is a community resource for adaptive immune receptore repertoire sequencing (AIRR-seq) processing pipelines.\nThe pipelines are implemented with ViaFoundry.\nWe have divided the pipelines into two main sections:"
+  },
+  {
+    "objectID": "index.html#repository-layout",
+    "href": "index.html#repository-layout",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines",
+    "section": "Repository layout",
+    "text": "Repository layout\nFor each pipeline you can find a directory containing the ViaFoundry pipeline (main.dn) as well as the configurations and the nextflow script (main.nf)"
+  },
+  {
+    "objectID": "index.html#pre-processing",
+    "href": "index.html#pre-processing",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines",
+    "section": "Pre-processing",
+    "text": "Pre-processing\nIn this section you can find pipelines to process the sequencer output files, meaning from ‘raw reads’ into an aligner ready fasta file.\nIn this section you can find pipelines to process the sequencer output files, from ‘raw reads’ into a fasta file ready to be used as an input for an alignment step and other downstream tasks.\nThe pipeplines were built based on the immcantation framework and specifically the pRESTO tool suite.\n\nAvailable pipelines:\n\n\n\nPipeline\nInput data\nSequencing protocol\nUMI\nPublished paper(s)\nGitHub Archive\nZenodo DOI\n\n\n\n\nRP1\nRaw sequences\n2X250\n+\n[11]\npipeAIRR/RP1\n8323986\n\n\nRP2\nRaw sequences\n2X250\n-\n[4]\npipeAIRR/RP2\n8324014\n\n\nRP3\nRaw sequences\n5’ RACE\n+\n[3], [1]\npipeAIRR/RP3\n8324028\n\n\nRP4\nRaw sequences\n2X300\n+\n[2]\npipeAIRR/RP4\n8324048\n\n\nRP5\nRaw sequences\n5’ RACE\n+\n[9]\npipeAIRR/RP5A, pipeAIRR/RP5B\n8324054, 8324060\n\n\nRP6\nRaw sequences\nRoche 454\n-\n[5]\npipeAIRR/RP6\n8324062\n\n\nRP7\nRaw sequences\n2X125 CD4\n-\n[8]\npipeAIRR/RP7\n8324082"
+  },
+  {
+    "objectID": "index.html#downstream-analysis",
+    "href": "index.html#downstream-analysis",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines",
+    "section": "Downstream analysis",
+    "text": "Downstream analysis\nIn this section you can find pipelines to analyze processed reads and infer genotype and haplotype. The pipelines were built based on the Yaari lab framework, which contains tools from: - immcantaton - VDJbase - TIgGER - RAbHIT - PIgLET\n\nAvailable pipelines:\n\n\n\nPipeline\nInput data\nSequencing protocol\nUMI\nPublished paper(s)\nGitHub Archive\nZenodo DOI\n\n\n\n\nPP1\nProcessed sequences\n-\n-\n[10]\npipeAIRR/PP1\n8323784\n\n\nPP2\nProcessed sequences\n-\n-\n[6]\npipeAIRR/PP2\n8323869\n\n\nPP3\nProcessed sequences\n-\n-\n[7]\npipeAIRR/PP3\n8323949\n\n\n\n\nProcessed sequences are the fasta file from the pre-processing step."
+  },
+  {
+    "objectID": "index.html#citations",
+    "href": "index.html#citations",
+    "title": "pipeAIRR - Github repository for Adaptive immune receptor repertoire ViaFoundry pipelines",
+    "section": "Citations:",
+    "text": "Citations:\n[1] Sivan Eliyahu, Oz Sharabi, Shiri Elmedvi, Reut Timor, Ateret Davidovich, Francois Vigneault, Chris Clouser, Ronen Hope, Assy Nimer, Marius Braun, Yaacov Y. Weiss, Pazit Polak, Gur Yaari, and Meital Gal-Tanamy. Antibody repertoire analysis of hepatitis c virus infections identifies immune signatures associated with spontaneous clearance. Frontiers in Immunology, 9:3004, 2018\n[2] Jacob D Galson, Sebastian Schaetzle, Rachael JM Bashford-Rogers, Matthew IJ Ray-313 bould, Aleksandr Kovaltsuk, Gavin J Kilpatrick, Ralph Minter, Donna K Finch, Jorge314 Dias, Louisa K James, et al. Deep sequencing of b cell receptor repertoires from covid-315 19 patients reveals strong convergent immune signatures. Frontiers in immunology,316 11:605170, 2020.\n[3] Moriah Gidoni, Omri Snir, Ayelet Peres, Pazit Polak, Ida Lindeman, Ivana Mikocziova, Vikas Kumar Sarna, Knut EA Lundin, Christopher Clouser, Francois Vigneault, et al. Mosaic deletion patterns of the human antibody heavy chain gene locus shown by bayesian haplotyping. Nature communications, 10(1):1–14, 2019\n[4] Victor Greiff, Ulrike Menzel, Ulrike Haessler, Skylar C Cook, Simon Friedensohn, Tarik A Khan, Mark Pogson, Ina Hellmann, and Sai T Reddy. Quantitative assessment of the robustness of next-generation sequencing of antibody variable gene repertoires from immunized mice. BMC immunology, 15:1–14, 2014.\n[5] Ning Jiang, Jiankui He, Joshua A Weinstein, Lolita Penland, Sanae Sasaki, Xiao-Song He, Cornelia L Dekker, Nai-Ying Zheng, Min Huang, Meghan Sullivan, et al. Lineage structure of the human antibody repertoire in response to influenza vaccination. Science translational medicine, 5(171):171ra19–171ra19, 2013\n[6] Aviv Omer, Or Shemesh, Ayelet Peres, Pazit Polak, Adrian J Shepherd, Corey T Watson, Scott D Boyd, Andrew M Collins, William Lees, and Gur Yaari. Vdjbase: an adaptive immune receptor genotype and haplotype database. Nucleic acids research, 48(D1):D1051–D1056, 2020\n[7] Ayelet Peres, William D Lees, Oscar L Rodriguez, Noah Y Lee, Pazit Polak, Ronen Hope, Meirav Kedmi, Andrew M Collins, Mats Ohlin, Steven H Kleinstein, Corey T Watson, and Gur Yaari. IGHV allele similarity clustering improves genotype inference from adaptive immune receptor repertoire sequencing data. Nucleic Acids Research, page gkad603, 08 2023.\n[8] Teresa Rubio, Maria Chernigovskaya, Susanna Marquez, Cristina Marti, Paula Izquierdo-Altarejos, Amparo Urios, Carmina Montoliu, Vicente Felipo, Ana Conesa, Victor Greiff, et al. A nextflow pipeline for t-cell receptor repertoire reconstruction and analysis from rna sequencing data. ImmunoInformatics, 6:100012, 2022.\n[9] Modi Safra, Zvi Tamari, Pazit Polak, Shachaf Shiber, Moshe Matan, Hani Karameh, Yigal Helviz, Adva Levy-Barda, Vered Yahalom, Avi Peretz, et al. Altered somatic hypermutation patterns in covid-19 patients classifies disease severity. Frontiers in Immunology, 14:1031914, 2023.13\n[10] Modi Safra, Lael Werner, Ayelet Peres, Pazit Polak, Naomi Salamon, Michael Schvimer, Batia Weiss, Iris Barshack, Dror S Shouval, and Gur Yaari. A somatic hypermutation based machine learning model stratifies individuals with crohn’s disease and controls. Genome Research, 33(1):71–79, 2023\n[11] Joel NH Stern, Gur Yaari, Jason A Vander Heiden, George Church, William F Donahue, Rogier Q Hintzen, Anita J Huttner, Jon D Laman, Rashed M Nagra, Alyssa Nylander, et al. B cells populating the multiple sclerosis brain mature in the draining cervical lymph nodes. Science translational medicine, 6(248):248ra107–248ra107, 2014"
+  },
+  {
+    "objectID": "frequency_question.html",
+    "href": "frequency_question.html",
+    "title": "1  Frequency question",
+    "section": "",
+    "text": "How to run a pipeline in viafoundry?\nHow to build a process in viafoundry?\nHow to build a module in viafoundry?\nHow to build a pipeline in viafoundry?\nWhat is the meaning of “Pipeline Header Script?\nIs it possible to run a pipeline with two different containers?\nHow to set up pipeline default parameters???????????\nHow to set up pipeline default run environment???????????\n - part: \"Tweaking existing pipeline parameters\"\n  chapters:\n    - tweak_and_run.qmd\n    - hardcode_tweak_param.qmd\n    \n    - export_a_pipeline.qmd\n- part: \"Setting default pipeline parameters and run environment\"\n  chapters: \n    - default_param.qmd"
+  },
+  {
+    "objectID": "Run_pipeline_nf.html",
+    "href": "Run_pipeline_nf.html",
+    "title": "2  Running Nextflow Pipelines from GitHub Repositories",
+    "section": "",
+    "text": "Follow these steps to run Nextflow pipelines hosted on GitHub:\nPrerequisites\n\nNextflow: Ensure Nextflow is installed on your system. Follow the official installation guide.\nDocker: Many Nextflow pipelines require Docker. Install Docker by following the official guide.\n\n1. Prepare Your Environment\nEnsure your Nextflow and Docker installations are up to date and correctly configured.\n2. Define the Pipeline Repository\nDefine the GitHub repository and its version containing the Nextflow pipeline you wish to run:\nnextflowScript = &lt;Repository_URL&gt;\nnextflowScriptVersion = &lt;Repository_Version&gt;'\n# Replace &lt;Repository_URL&gt; and &lt;Repository_Version&gt; with the appropriate values for the pipeline you're using.\n3. Configure Pipeline Parameters\nIdentify the input parameters required by the pipeline. These may include paths to input files, output directories, and other configuration options. Set these parameters using variables:\ninput=\"path/to/input\"\noutputPath=\"path/to/output\"\n# Add more variables as needed\n4. Run the Pipeline\nConstruct and execute the Nextflow command with your parameters:\nnextflow run  ${nextflowScript} -r ${nextflowScriptVersion} -with-docker --input '${input}' --output '${outputPath}' # Add other parameters as needed\n#Replace --input and --output with the appropriate parameter names for your pipeline.\n5. Monitor Execution and Check Outputs\nNextflow will print progress logs to the console. Monitor these logs to ensure the pipeline is executing as expected. Outputs will be saved to the specified output directory.\nBy following these steps, you can run any Nextflow pipeline hosted on GitHub. Customize the input parameters and execution options based on the specific requirements of the pipeline you’re using."
+  },
+  {
+    "objectID": "script_for_params.html",
+    "href": "script_for_params.html",
+    "title": "3  An easy way to set pipeline default parameters",
+    "section": "",
+    "text": "Follow these steps to set default parameters for the pipeline:\n1. Download the “params_dolphinnext.R” script from GitHub\nhttps://github.com/PipeAIRR/params_dolphinnext\n2. Create a csv file of pipeline parameters\nCreate a csv file that contain a table that each row is a parameter you want to defined.\nThe table columns: - module - the module name - process - the process name - parameter - the parameter name - value - the parameter value\n3. Run the script from the command line\nRscript params_dolphinnext.R csv_file.csv\n4. Copy output \nCopy the text from the file.txt that created to the “Pipeline Header Script” in the “Advanced” tab of the pipeline."
+  },
+  {
+    "objectID": "documentation.html",
+    "href": "documentation.html",
+    "title": "4  Recommended documentation format",
+    "section": "",
+    "text": "Follow these recommends format for documenting pipelines with clarity and efficiency.\nA pipeline for {short summary} that was produced in the same fashion as those in {paper}.\n\n**Library preparation and sequencing method:**\n\n  {explanation about the sequence}\n\n\n**Input files:**\n\n1. {file 1}\n2. {file 2}\n\n   .\n  \n   .\n  \n   .\n\n**To test the pipeline:**\n\n{optional test mathod}\n\n\n**Output files:**\n\n1. {file 1}\n2. {file 2}\n\n   .\n  \n   .\n  \n   .\n\n**Pipeline container:**\n\n* Docker: {docker image}\n\n\n**Sequence processing steps:**\n\n1. {step 1}\n2. {step 2}\n   .\n  \n   .\n  \n   .\n\n**File used:**\n\n* {file 1}\n* {file 2}\n  .\n  \n  .\n  \n  ."
+  },
+  {
+    "objectID": "zenodo.html",
+    "href": "zenodo.html",
+    "title": "5  Archive GitHub Repository in Zenodo",
+    "section": "",
+    "text": "Follow these steps to archive your GitHub repository in Zenodo:\n1. Create a Release in GitHub:\n\nGo to your GitHub repository.\nClick on the “Releases” tab.\nDraft a new release, providing necessary information.\nPublish the release.\n\n2. Create a Zenodo Account:\n\nIf not already done, create an account on Zenodo.\n\n3. Connect GitHub and Zenodo:\n\nIn Zenodo, navigate to the “GitHub Sync” tab.\nAuthorize Zenodo to access your GitHub repositories.\n\n4. Deposit from GitHub:\n\nIn Zenodo, go to the “Upload” page.\nSelect “GitHub” as the upload method.\nChoose the repository and release.\nFill in metadata details.\nStart the upload.\n\n5. Check the Archival Process:\n\nAfter completion, Zenodo will provide a DOI for your repository.\nFind the archived repository on your Zenodo profile.\n\n6. Citation:\n\nUse the DOI to cite your GitHub repository in publications.\n\nNow your GitHub repository is archived in Zenodo and can be referenced with a DOI."
+  },
+  {
+    "objectID": "import_pipeline.html",
+    "href": "import_pipeline.html",
+    "title": "6  How to import a pipeline to dolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on the “Pipelines” tab\n\n4. Click on the “new pipeline” button\n\n5. Click on “Input Pipeline”\n\n6. Click on the “Select File” button\n\n7. Choose the “main.dn” file\n\n8. Click on the “Next” button\n\n9. Click on the “Import” button\n\n10. Click on the “Complete” button"
+  },
+  {
+    "objectID": "run_pipeline.html",
+    "href": "run_pipeline.html",
+    "title": "7  How to run a pipeline in DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on the “Run” button\n\n5. Click on the”Create New Run” option\n\n6. Choose the Project or create a new one\n\n7. Click on the “Select Project” button\n\n8. Enter run name and click on “Save run”\n\n9. Choose run enviroment\n\n10. Enter work directory\n\n11. Enter the files and values the pipeline needs\n\n12. Click on the “Run” button\n\n13. Choose the “Start” option\n\n14. For more information on how to run the pipeline go to\nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/project.html\n15. For information about the run page go to\nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/run.html"
+  },
+  {
+    "objectID": "tweak_and_run.html",
+    "href": "tweak_and_run.html",
+    "title": "8  How to create a run with tweaked parametrs in DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on the “run” button\n\n5. Choose “Create New Run”\n\n6. Select a project or create a new one\n\n7. Enter run name and click on the “Save run” button\n\n8. Find the module of the parameter you want to change\n\n9. Change the “no” to “yes” and click on the settings button \n\n10. Enter the new parametrs for this module. The parametrs that appear are the default in the module (not in the pipeline)\n\n11. Click on the “Ok” button\n\n12. Run the pipeline with the tweaked parameters"
+  },
+  {
+    "objectID": "hardcode_tweak_param.html",
+    "href": "hardcode_tweak_param.html",
+    "title": "9  How to hardcode tweaked parameters for an imported pipeline?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2.Navigate to http://localhost:8080/dolphinnext/\n3. Choose your pipeline\n\n4. Click on the “Advanced” tab\n\n6. Find and change the desired parameter in the “Pipeline Header Script”\n\n7. Save the change\n\n8. Click on the “Overwrite” or “Save as New Revision” button\n\n9. Export the tweaked pipeline"
+  },
+  {
+    "objectID": "build_process.html",
+    "href": "build_process.html",
+    "title": "10  How to build a process in DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on the “Pipelines” tab\n\n4. Click on the “New Process” button\n\n5. Enter input and output parameters\n\n6. Write the script\n #### Made with Scribe\n7. For more information go to\nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/process.html"
+  },
+  {
+    "objectID": "build_module.html",
+    "href": "build_module.html",
+    "title": "11  How to build a module in DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on the “Pipelines” tab\n\n4. Click on the “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
+  },
+  {
+    "objectID": "build_pipeline.html",
+    "href": "build_pipeline.html",
+    "title": "12  How to build a pipeline in DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2. Navigate to http://localhost:8080/dolphinnext/\n3. Click on the “Pipelines” tab\n\n4. Click on the “New Pipeline” button\n\n5. Add pipeline description, workflow and advanced \n\n6. For more information go to \nhttps://dolphinnext.readthedocs.io/en/latest/dolphinNext/pipeline.html"
+  },
+  {
+    "objectID": "export_a_pipeline.html",
+    "href": "export_a_pipeline.html",
+    "title": "13  How to export a pipeline from DolphinNext?",
+    "section": "",
+    "text": "1. Launch your DolphinNext docker\nOUTDIR=${replace_with_your_directory}\ndocker run --privileged -m 10G -p 8080:80 -v $OUTDIR:/export -ti ummsbiocore/dolphinnext-studio /bin/bash\n# inside the docker\nstartup\n2.Navigate to http://localhost:8080/dolphinnext/\n3. Click on the “Pipelines” tab\n\n4. Choose your pipeline\n\n5. Click on “Download Pipeline”"
+  },
+  {
+    "objectID": "default_param.html",
+    "href": "default_param.html",
+    "title": "14  How to set up pipeline default parameters and run environment?",
+    "section": "",
+    "text": "1. Choose your pipeline\n\n2. Click on the “Advanced” tab\n\n3. Go to the “Pipeline Header Script” section\n\n4. First add for each process an option to change the parameters. To do that, the first step must be access the params variable, then the module name, and finally the process name.\n\n5. Setting the default parameters\nTo set the parameters of a process, the first step must be access the params variable, then the module name, the process name, and finally the parameter name.\n\n6. Setting the run environment\nDifferent run environments can be set for various machines, with ”if and else” statement. The $HOSTNAME variable holds the machine name, where ’default’ is usually the local machine. To control the Docker or Singularity image, the $DOCKER_IMAGE variable or the $SINGULARITY_IMAGE variable needs to be allocated. Moreover, the Docker or Singularity properties can be defined also. Additionally, the configuration of machine properties specifically for remote machines also can be defined.\n\n7. Save the changes"
+  },
+  {
+    "objectID": "two_dockers.html",
+    "href": "two_dockers.html",
+    "title": "16  Is it possible to run a pipeline with two different containers?",
+    "section": "",
+    "text": "TLDR; yes you can! Just follow the steps below to configure the containers.\nIf you searched this question, it means you encountered the same problem we did, where we have modules or processes that require the use of different containers to perform the task. Nextflow allows you to configure a container for each process with a simple code for more info see. The steps below detail the process of configuring the containers and the processes. They are intended for the nextflow.config file as you can configure in DolphinNext.\nExample for this issue\nThis process needs to run on a “milaboratory/mixcr:latest” docker image\n\nThis process needs to run on a “ssnnm/mhecd4tcr:0.1.0” docker image\n\nClick the on “Advanced” tab\n\nHow to define the containers\nThe docker images need to be defined on the the nextflow.config file as a new process that contains “container=” and the main docker image. For each process that needs to run with a different docker, write “WithName:”, the process name, and in {} “container=” the image docker for this process."
+  }
+]
